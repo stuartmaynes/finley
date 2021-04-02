@@ -1,38 +1,28 @@
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: darken($color, 8%);
-        color: lighten($color, 55%);
+        background-color: $vdark;
+        color: $white;
 
         a {
-            color: lighten($color, 55%);
+            color: $white;
+            text-decoration-color: lighten($dark, 20%);
         }
 
         .c-article {
 
-            pre code {
-                background-color: darken($color, 8%);
+            code {
+                background-color: $dark;
             }
 
             p, li {
-                a {
-                    text-decoration-color: lighten($color, 8%);
-                }
-
                 a:hover {
-                    text-decoration-color: #1EB2F1;
+                    text-decoration-color: $color;
                 }
             }
-
         }
 
         .c1 {
-            color: lighten($color, 20%);
-        }
-
-        .c-site-footer {
-            p:first-child {
-                border-top-color: lighten($color, 8%);
-            }
+            color: #999;
         }
     }
 }
