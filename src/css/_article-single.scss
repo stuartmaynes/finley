@@ -1,0 +1,47 @@
+.c-article--single {
+    h1 {
+        font-size: 2.1em;
+        line-height: 1.1em;
+        margin-top: 0;
+    }
+
+    h2 {
+        margin-bottom: -0.2em;
+        margin-top: 1.6em;
+    }
+
+    h3, h4, h5, h6 {
+        margin-bottom: -0.3em;
+        margin-top: 1em;
+    }
+
+    .c-anchor {
+        display: inline-block;
+        padding-top: 0.5em;
+    }
+
+    .c-article__date {
+        margin-block-start: 3em;
+    }
+
+    .c-note {
+        border-bottom: 1px solid #DDD;
+        border-top: 1px solid #DDD;
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+
+    .c-note::before {
+        content: 'Note.';
+        display: block;
+        font-weight: bold;
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+    }
+
+    .c-draft-notice {
+        background-color: #FFFFCC;
+        font-size: 0.8em;
+        padding: 0.7em;
+    }
+}

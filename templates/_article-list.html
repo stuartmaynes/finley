@@ -1,0 +1,21 @@
+{% for article in articles %}
+<article class="c-article c-article--list" id="{{ article.slug }}">
+
+    <header class="c-article__header">
+        <h1 class="c-article__title">
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </h1>
+    </header>
+
+    <p>{{ article.summary|striptags }}</p>
+
+    <footer class="c-article__footer">
+        <p class="c-article__date">Published &dash;
+            <time  itemprop="datePublished" datetime="{{ article.date }}">
+                {{ article.locale_date }}
+            </time>
+        </p>
+    </footer>
+
+</article>
+{% endfor %}

@@ -1,0 +1,22 @@
+.c-article--list {
+    margin-top: 3.5em;
+
+    .c-article__title {
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: #CCC;
+    }
+
+    a:hover {
+        text-decoration-color: $color;
+    }
+
+    p {
+        margin: 0.5em 0;
+    }
+
+}

@@ -1,0 +1,22 @@
+.c-archive-list {
+    margin-top: 3em;
+
+    &__title {
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.3em;
+        margin: 0;
+    }
+
+    &__articles {
+        margin-top: 0.5em;
+    }
+
+    a {
+        text-decoration: underline;
+        text-decoration-color: #CCC;
+    }
+
+    a:hover {
+        text-decoration-color: $color;
+    }
+}

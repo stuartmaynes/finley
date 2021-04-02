@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ category }} | {{ SITENAME }}{% endblock %}
+
+{% block meta %}
+    <meta name="authors" content="{{ AUTHOR }}" />
+    <meta name="summary" content="Articles about {{ category }}" />
+{% endblock %}
+
+{% block content %}
+<section class="c-container">
+    <h1>{{ category }}</h1>
+
+    {% include '_article-list.html' %}
+</section>
+{% endblock%}

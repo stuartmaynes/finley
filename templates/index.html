@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+    <meta name="authors" content="{{ AUTHOR }}" />
+    <meta name="description" content="Software engineer working with Python, Django, and Flask." />
+{% endblock %}
+
+{% block title %}{{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section class="c-container" id="index">
+
+    <p class="c-intro">{{ SITE_DESC }}</p>
+
+    {% include '_article-list.html' %}
+
+</section>
+{% endblock%}

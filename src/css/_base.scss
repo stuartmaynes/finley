@@ -1,0 +1,143 @@
+.c-container {
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+
+    @media screen and (min-width: 600px) {
+        padding: 50px 25px;
+    }
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+body {
+    color: $dark;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.1em;
+
+    animation: fadeIn ease 0.75s;
+    -webkit-animation: fadeIn ease 0.75s;
+    -moz-animation: fadeIn ease 0.75s;
+    -o-animation: fadeIn ease 0.75s;
+    -ms-animation: fadeIn ease 0.75s;
+
+    @media screen and (min-width: 600px) {
+        font-size: 1.2em;
+    }
+
+    p, li {
+        line-height: 1.6em;
+    }
+
+    a {
+        color: $dark;
+        text-decoration: none;
+    }
+}
+
+.c-site-header {
+    .c-container {
+        padding: 80px 20px 40px;
+
+        @media screen and (min-width: 600px) {
+            padding: 100px 25px 50px;
+        }
+    }
+
+    .c-site-name {
+        font-family: 'Heebo', sans-serif;
+        font-size: 15px;
+        line-height: 1em;
+    }
+}
+
+.c-site-footer {
+    font-size: 0.75em;
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover {
+        text-decoration-color: $color;
+    }
+
+    p:first-child {
+        border-top: 1px solid #DDD;
+        padding-top: 20px;
+        margin-top: 0;
+    }
+
+    &__links {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            margin-right: 5px;
+
+            @media screen and (min-width: 600px) {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+::-moz-selection {
+    background: lighten($color, 15%);
+}
+::selection {
+    background: lighten($color, 15%);
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {color: $color;}
+    100% {color: #111;}
+}
+
+@keyframes fadeToBlack {
+    0% {color: $color;}
+    100% {color: #111;}
+}
+
+@-moz-keyframes fadeToBlack {
+    0% {color: $color;}
+    100% {color: #111;}
+}
+
+@-webkit-keyframes fadeToBlack {
+    0% {color: $color;}
+    100% {color: #111;}
+}
+
+@-o-keyframes fadeToBlack {
+    0% {color: $color;}
+    100% {color: #111;}
+}
+
+@-ms-keyframes fadeToBlack {
+    0% {color: $color;}
+    100% {color: #111;}
+}

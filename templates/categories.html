@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Categories | {{ SITENAME }}{% endblock %}
+
+{% block meta %}
+    <meta name="authors" content="{{ AUTHOR }}" />
+    <meta name="summary" content="Categories on {{ SITENAME }}" />
+{% endblock %}
+
+{% block content %}
+<section class="c-container">
+    <h1>Categories</h1>
+    {% for term, articles in categories %}
+        <div class="c-archive-list">
+            <h2 class="c-archive-list__title">
+                <a href="{{ SITEURL }}/{{ term.url }}">{{ term }}</a>
+            </h2>
+            <ul class="c-archive-list__articles">
+                {% for article in articles %}
+                    <li><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</section>
+{% endblock%}

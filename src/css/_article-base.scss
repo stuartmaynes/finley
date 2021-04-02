@@ -1,0 +1,71 @@
+:target a {
+    animation: fadeToBlack ease 3s;
+    -webkit-animation: fadeToBlack ease 3s;
+    -moz-animation: fadeToBlack ease 3s;
+    -o-animation: fadeToBlack ease 3s;
+    -ms-animation: fadeToBlack ease 3s;
+}
+
+.c-article {
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Heebo', sans-serif;
+    }
+
+    pre code {
+        border-radius: 2px;
+        background-color: #F5F6F7;
+        font-size: 18px;
+        display: block;
+        line-height: 1.6em;
+        overflow: auto;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    p code {
+        background-color: #F5F5F5;
+        font-size: .9em;
+        padding: 0 3px;
+    }
+
+    p, li {
+        line-height: 1.5em;
+
+        a {
+            text-decoration: underline;
+            text-decoration-color: #CCC;
+            text-decoration-thickness: 2px;
+        }
+
+        a:hover {
+            text-decoration-color: $color;
+        }
+    }
+
+    p img {
+        height: auto;
+        max-width: 100%;
+        display: block;
+    }
+
+    &__date {
+        font-family: arial, sans-serif;
+        font-weight: bold;
+        display: block;
+        font-size: 14px;
+        margin-bottom: 80px;
+    }
+
+    .footnote {
+        font-size: 85%;
+        border-bottom: 1px solid #ddd;
+        margin-top: 30px;
+
+        hr {
+            border: solid #ddd;
+            border-width: 1px 0 0;
+        }
+        p { margin: 0 0 5px; }
+    }
+}
